@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import DataFillingForm from "./components/DataFillingForm";
+import PDFViwer from "./components/PDFViwer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-11/12 mt-4 mx-auto border border-black rounded-lg p-4">
+      <h1 className="text-3xl font-semibold">Catálogo</h1>
+      <div className="grid grid-cols-2 mt-4">
+        
+        <DataFillingForm />
+        
+        <PDFViwer />
+        
+      </div>
     </div>
   );
 }
