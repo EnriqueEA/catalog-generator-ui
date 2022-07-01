@@ -1,9 +1,9 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect } from "react";
 
-const initialState: JSX.Element[] = [];
+// const initialState: JSX.Element[] = [];
 
 const Catalogo = (): JSX.Element => {
-   const [body, setBody] = useState(initialState);
+   // const [body, setBody] = useState(initialState);
 
    const getData = useCallback(async () => {
       const data = await fetch('https://catalogo-motopartsbikers-default-rtdb.firebaseio.com/users.json');
