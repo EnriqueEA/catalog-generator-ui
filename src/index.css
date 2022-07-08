@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: .8rem;
+}
+
+h6 {
+  font-size: .6rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
 .form-control {
-  @apply rounded-md border-2 border-gray-300 focus:border-[#37a0f4] outline-none px-2 py-1;
+  @apply rounded-[5px] border border-gray-300 outline-none focus:border-black py-3 px-4;
 }
